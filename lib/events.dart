@@ -8,9 +8,26 @@ class EventsPage extends StatefulWidget {
 class _EventsPageState extends State<EventsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("Events Page"),
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text((''
+              'logo')),
+        ),
+        body: Column(
+          children: <Widget>[
+            Image.asset('assets/images/logo.png'),
+            Container(
+              padding: EdgeInsets.all(15.00),
+              child: Text(
+                ' Petter John',
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

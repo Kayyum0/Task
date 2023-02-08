@@ -3,8 +3,8 @@ import 'package:navigationdrawer/privacy_policy.dart';
 import 'package:navigationdrawer/send_feedback.dart';
 import 'package:navigationdrawer/settings.dart';
 
-import 'contacts.dart';
-import 'dashboard.dart';
+import 'overflow.dart';
+import 'homepage.dart';
 import 'events.dart';
 import 'my_drawer_header.dart';
 import 'notes.dart';
@@ -36,9 +36,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     var container;
     if (currentPage == DrawerSections.homepage) {
-      container = DashboardPage();
+      container = HomesPage();
     } else if (currentPage == DrawerSections.overflowbox) {
-      container = ContactsPage();
+      container = OverFlow();
     } else if (currentPage == DrawerSections.events) {
       container = EventsPage();
     } else if (currentPage == DrawerSections.notes) {

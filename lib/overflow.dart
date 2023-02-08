@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ContactsPage extends StatelessWidget {
+class OverFlow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
